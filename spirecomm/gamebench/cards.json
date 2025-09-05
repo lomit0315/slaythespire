@@ -1,0 +1,1446 @@
+[
+    {
+        "name": "Bash",
+        "description": "Deal 8(10) damage. Apply 2(3)  Vulnerable."
+    },
+    {
+        "name": "Defend",
+        "description": "Gain 5(8)  Block."
+    },
+    {
+        "name": "Strike",
+        "description": "Deal 6(9) damage."
+    },
+    {
+        "name": "Anger",
+        "description": "Deal 6(8) damage. Add a copy of this card to your discard pile."
+    },
+    {
+        "name": "Armaments",
+        "description": "Gain 5  Block. Upgrade a(ALL) card(s) in your hand for the rest of combat."
+    },
+    {
+        "name": "Body Slam",
+        "description": "Deal damage equal to your current  Block."
+    },
+    {
+        "name": "Clash",
+        "description": "Can only be played if every card in your hand is an Attack. Deal 14(18) damage."
+    },
+    {
+        "name": "Cleave",
+        "description": "Deal 8(11) damage to ALL enemies."
+    },
+    {
+        "name": "Clothesline",
+        "description": "Deal 12(14) damage. Apply 2(3)  Weak."
+    },
+    {
+        "name": "Flex",
+        "description": "Gain 2(4)  Strength. At the end of your turn, lose 2(4)  Strength."
+    },
+    {
+        "name": "Havoc",
+        "description": "Play the top card of your draw pile and Exhaust it."
+    },
+    {
+        "name": "Headbutt",
+        "description": "Deal 9(12) damage. Place a card from your discard pile on top of your draw pile."
+    },
+    {
+        "name": "Heavy Blade",
+        "description": "Deal 14 damage.  Strength affects Heavy Blade 3(5) times."
+    },
+    {
+        "name": "Iron Wave",
+        "description": "Gain 5(7)  Block. Deal 5(7) damage."
+    },
+    {
+        "name": "Perfected Strike",
+        "description": "Deal 6 damage. Deals an additional 2(3) damage for ALL of your cards containing \"Strike\"."
+    },
+    {
+        "name": "Pommel Strike",
+        "description": "Deal 9(10) damage. Draw 1(2) card(s)."
+    },
+    {
+        "name": "Shrug it Off",
+        "description": "Gain 8(11)  Block. Draw 1 card."
+    },
+    {
+        "name": "Sword Boomerang",
+        "description": "Deal 3 damage to a random enemy 3(4) times."
+    },
+    {
+        "name": "Thunderclap",
+        "description": "Deal 4(7) damage and apply 1  Vulnerable to ALL enemies."
+    },
+    {
+        "name": "True Grit",
+        "description": "Gain 7(9)  Block. Exhaust a random(not random) card from your hand."
+    },
+    {
+        "name": "Twin Strike",
+        "description": "Deal 5(7) damage twice."
+    },
+    {
+        "name": "Warcry",
+        "description": "Draw 1(2) card(s). Place a card from your hand on top of your draw pile. Exhaust."
+    },
+    {
+        "name": "Wild Strike",
+        "description": "Deal 12(17) damage. Shuffle a Wound into your draw pile."
+    },
+    {
+        "name": "Battle Trance",
+        "description": "Draw 3(4) cards. You cannot draw additional cards this turn."
+    },
+    {
+        "name": "Blood for Blood",
+        "description": "Costs 1 less energy for each time you lose HP in combat. Deal 18(22) damage."
+    },
+    {
+        "name": "Bloodletting",
+        "description": "Lose 3 HP. Gain 2(3) Energy."
+    },
+    {
+        "name": "Burning Pact",
+        "description": "Exhaust 1 card. Draw 2(3) cards."
+    },
+    {
+        "name": "Carnage",
+        "description": "Ethereal. Deal 20(28) damage."
+    },
+    {
+        "name": "Combust",
+        "description": "At the end of your turn, lose 1 HP and deal 5(7) damage to ALL enemies."
+    },
+    {
+        "name": "Dark Embrace",
+        "description": "Whenever a card is Exhausted, draw 1 card."
+    },
+    {
+        "name": "Disarm",
+        "description": "Enemy loses 2(3)  Strength. Exhaust."
+    },
+    {
+        "name": "Dropkick",
+        "description": "Deal 5(8) damage. If the enemy is  Vulnerable, gain 1 energy and draw 1 card."
+    },
+    {
+        "name": "Dual Wield",
+        "description": "Create a(2) copy(s) of an Attack or Power card in your hand."
+    },
+    {
+        "name": "Entrench",
+        "description": "Double your current  Block."
+    },
+    {
+        "name": "Evolve",
+        "description": "Whenever you draw a Status card, draw 1(2) card(s)."
+    },
+    {
+        "name": "Feel No Pain",
+        "description": "Whenever a card is Exhausted, gain 3(4)  Block."
+    },
+    {
+        "name": "Fire Breathing",
+        "description": "Whenever you draw a Status or Curse card, deal 6(10) damage to all enemies."
+    },
+    {
+        "name": "Flame Barrier",
+        "description": "Gain 12(16)  Block. Whenever you are attacked this turn, deal 4(6) damage to the attacker."
+    },
+    {
+        "name": "Ghostly Armor",
+        "description": "Ethereal.\n\nGain 10(13) Block."
+    },
+    {
+        "name": "Hemokinesis",
+        "description": "Lose 2 HP. Deal 15(20) damage."
+    },
+    {
+        "name": "Infernal Blade",
+        "description": "Add a random Attack to your hand. It costs 0 this turn. Exhaust."
+    },
+    {
+        "name": "Inflame",
+        "description": "Gain 2(3)  Strength."
+    },
+    {
+        "name": "Intimidate",
+        "description": "Apply 1(2)  Weak to ALL enemies. Exhaust."
+    },
+    {
+        "name": "Metallicize",
+        "description": "At the end of your turn, gain 3(4)  Block."
+    },
+    {
+        "name": "Power Through",
+        "description": "Add 2 Wounds to your hand. Gain 15(20)  Block."
+    },
+    {
+        "name": "Pummel",
+        "description": "Deal 2 damage 4(5) times. Exhaust."
+    },
+    {
+        "name": "Rage",
+        "description": "Whenever you play an Attack this turn, gain 3(5)  Block."
+    },
+    {
+        "name": "Rampage",
+        "description": "Deal 8 damage. Increase this card's damage by 5(8) this combat."
+    },
+    {
+        "name": "Reckless Charge",
+        "description": "Deal 7(10) damage. Shuffle a Dazed into your draw pile."
+    },
+    {
+        "name": "Rupture",
+        "description": "Whenever you lose HP from a card, gain 1(2)  Strength."
+    },
+    {
+        "name": "Searing Blow",
+        "description": "Deal 12(16) damage. Can be upgraded any number of times."
+    },
+    {
+        "name": "Second Wind",
+        "description": "Exhaust all non-Attack cards in your hand and gain 5(7)  Block for each card Exhausted."
+    },
+    {
+        "name": "Seeing Red",
+        "description": "Gain 2 energy. Exhaust."
+    },
+    {
+        "name": "Sentinel",
+        "description": "Gain 5(8)  Block. If this card is Exhausted, gain 2(3) energy."
+    },
+    {
+        "name": "Sever Soul",
+        "description": "Exhaust all non-Attack cards in your hand. Deal 16(22) damage."
+    },
+    {
+        "name": "Shockwave",
+        "description": "Apply 3(5)  Weak and  Vulnerable to ALL enemies.\n\nExhaust."
+    },
+    {
+        "name": "Spot Weakness",
+        "description": "If the enemy intends to attack, gain 3(4)  Strength."
+    },
+    {
+        "name": "Uppercut",
+        "description": "Deal 13 damage. Apply 1(2)  Weak. Apply 1(2)  Vulnerable."
+    },
+    {
+        "name": "Whirlwind",
+        "description": "Deal 5(8) damage to ALL enemies X times."
+    },
+    {
+        "name": "Barricade",
+        "description": "Block is not removed at the start of your turn."
+    },
+    {
+        "name": "Berserk",
+        "description": "Gain 2(1)  Vulnerable. At the start of your turn, gain 1 Energy."
+    },
+    {
+        "name": "Bludgeon",
+        "description": "Deal 32(42) damage."
+    },
+    {
+        "name": "Brutality",
+        "description": "(Innate.) At the start of your turn, lose 1 HP and draw 1 card."
+    },
+    {
+        "name": "Corruption",
+        "description": "Skills cost 0. Whenever you play a Skill, Exhaust it."
+    },
+    {
+        "name": "Demon Form",
+        "description": "At the start of each turn, gain 2(3)  Strength."
+    },
+    {
+        "name": "Double Tap",
+        "description": "This turn, your next (2) Attack(s) is(are) played twice."
+    },
+    {
+        "name": "Exhume",
+        "description": "Put a card from your Exhaust pile into your hand. Exhaust."
+    },
+    {
+        "name": "Feed",
+        "description": "Deal 10(12) damage. If this kills a non-minion enemy, gain 3(4) permanent Max HP. Exhaust."
+    },
+    {
+        "name": "Fiend Fire",
+        "description": "Exhaust all cards in your hand. Deal 7(10) damage for each Exhausted card. Exhaust."
+    },
+    {
+        "name": "Immolate",
+        "description": "Deal 21(28) damage to ALL enemies. Add a Burn into your discard pile."
+    },
+    {
+        "name": "Impervious",
+        "description": "Gain 30(40)  Block. Exhaust."
+    },
+    {
+        "name": "Juggernaut",
+        "description": "Whenever you gain  Block, deal 5(7) damage to a random enemy."
+    },
+    {
+        "name": "Limit Break",
+        "description": "Double your  Strength. Exhaust(Don't Exhaust)."
+    },
+    {
+        "name": "Offering",
+        "description": "Lose 6 HP. Gain 2 energy. Draw 3(5) cards. Exhaust."
+    },
+    {
+        "name": "Reaper",
+        "description": "Deal 4(5) damage to ALL enemies. Heal HP equal to unblocked damage. Exhaust."
+    },
+    {
+        "name": "Neutralize",
+        "description": "Deal 3(4) damage. Apply 1(2)  Weak."
+    },
+    {
+        "name": "Survivor",
+        "description": "Gain 8(11)  Block. Discard a card."
+    },
+    {
+        "name": "Acrobatics",
+        "description": "Draw 3(4) cards. Discard 1 card."
+    },
+    {
+        "name": "Backflip",
+        "description": "Gain 5(8)  Block. Draw 2 cards."
+    },
+    {
+        "name": "Bane",
+        "description": "Deal 7(10) damage. If the enemy is  Poisoned, deal 7(10) damage again."
+    },
+    {
+        "name": "Blade Dance",
+        "description": "Add 3(4) Shivs to your hand."
+    },
+    {
+        "name": "Cloak And Dagger",
+        "description": "Gain 6  Block. Add 1(2) Shiv(s) to your hand."
+    },
+    {
+        "name": "Dagger Spray",
+        "description": "Deal 4(6) damage to ALL enemies twice."
+    },
+    {
+        "name": "Dagger Throw",
+        "description": "Deal 9(12) damage. Draw 1 card. Discard 1 card."
+    },
+    {
+        "name": "Deadly Poison",
+        "description": "Apply 5(7)  Poison."
+    },
+    {
+        "name": "Deflect",
+        "description": "Gain 4(7)  Block."
+    },
+    {
+        "name": "Dodge and Roll",
+        "description": "Gain 4(6)  Block. Next turn, gain 4(6)  Block."
+    },
+    {
+        "name": "Flying Knee",
+        "description": "Deal 8(11) damage. Next turn, gain 1 Energy."
+    },
+    {
+        "name": "Outmaneuver",
+        "description": "Next turn, gain 2(3) Energy."
+    },
+    {
+        "name": "Piercing Wail",
+        "description": "ALL enemies lose 6(8)  Strength for 1 turn. Exhaust."
+    },
+    {
+        "name": "Poisoned Stab",
+        "description": "Deal 6(8) damage. Apply 3(4)  Poison."
+    },
+    {
+        "name": "Prepared",
+        "description": "Draw 1(2) card(s). Discard 1(2) card(s)."
+    },
+    {
+        "name": "Quick Slash",
+        "description": "Deal 8(12) damage. Draw 1 card."
+    },
+    {
+        "name": "Slice",
+        "description": "Deal 6(9) damage."
+    },
+    {
+        "name": "Sneaky Strike",
+        "description": "Deal 12(16) damage. If you have discarded a card this turn, gain 2 Energy."
+    },
+    {
+        "name": "Sucker Punch",
+        "description": "Deal 7(9) damage. Apply 1(2)  Weak."
+    },
+    {
+        "name": "Accuracy",
+        "description": "Shivs deal 4(6) additional damage."
+    },
+    {
+        "name": "All-Out Attack",
+        "description": "Deal 10(14) damage to ALL enemies. Discard 1 card at random."
+    },
+    {
+        "name": "Backstab",
+        "description": "Deal 11(15) damage. Innate. Exhaust."
+    },
+    {
+        "name": "Blur",
+        "description": "Gain 5(8)  Block.  Block is not removed at the start of your next turn."
+    },
+    {
+        "name": "Bouncing Flask",
+        "description": "Apply 3  Poison to a random enemy 3(4) times."
+    },
+    {
+        "name": "Calculated Gamble",
+        "description": "Discard your hand, then draw that many cards.\n\nExhaust. (Don't exhaust)"
+    },
+    {
+        "name": "Caltrops",
+        "description": "Whenever you are attacked, deal 3(5) damage back."
+    },
+    {
+        "name": "Catalyst",
+        "description": "Double(Triple) an enemy's  Poison. Exhaust."
+    },
+    {
+        "name": "Choke",
+        "description": "Deal 12 damage. Whenever you play a card this turn, the targeted enemy loses 3(5) HP."
+    },
+    {
+        "name": "Concentrate",
+        "description": "Discard 3(2) cards. Gain 2 Energy."
+    },
+    {
+        "name": "Crippling Cloud",
+        "description": "Apply 4(7)  Poison and 2  Weak to ALL enemies. Exhaust."
+    },
+    {
+        "name": "Dash",
+        "description": "Gain 10(13)  Block. Deal 10(13) damage."
+    },
+    {
+        "name": "Distraction",
+        "description": "Add a random Skill to your hand. It costs 0 this turn. Exhaust."
+    },
+    {
+        "name": "Endless Agony",
+        "description": "Whenever you draw this card, add a copy of it to your hand. Deal 4(6) damage. Exhaust."
+    },
+    {
+        "name": "Escape Plan",
+        "description": "Draw 1 card. If you draw a Skill, gain 3(5)  Block."
+    },
+    {
+        "name": "Eviscerate",
+        "description": "Costs 1 less Energy for each card discarded this turn. Deal 7(9) damage three times."
+    },
+    {
+        "name": "Expertise",
+        "description": "Draw cards until you have 6(7) in your hand."
+    },
+    {
+        "name": "Finisher",
+        "description": "Deal 6(8) damage for each Attack played this turn."
+    },
+    {
+        "name": "Flechettes",
+        "description": "Deal 4(6) damage for each Skill in your hand."
+    },
+    {
+        "name": "Footwork",
+        "description": "Gain 2(3)  Dexterity."
+    },
+    {
+        "name": "Heel Hook",
+        "description": "Deal 5(8) damage. If the enemy is  Weak, Gain 1 Energy and draw 1 card."
+    },
+    {
+        "name": "Infinite Blades",
+        "description": "(Innate.)\n\nAt the start of your turn, add a Shiv to your hand."
+    },
+    {
+        "name": "Leg Sweep",
+        "description": "Apply 2(3)  Weak. Gain 11(14)  Block."
+    },
+    {
+        "name": "Masterful Stab",
+        "description": "Costs 1 additional Energy for each time you lose HP this combat. Deal 12(16) damage."
+    },
+    {
+        "name": "Noxious Fumes",
+        "description": "At the start of your turn, apply 2(3)  Poison to ALL enemies."
+    },
+    {
+        "name": "Predator",
+        "description": "Deal 15(20) damage. Draw 2 more cards next turn."
+    },
+    {
+        "name": "Reflex",
+        "description": "Unplayable. If this card is discarded from your hand, draw 2(3) cards."
+    },
+    {
+        "name": "Riddle With Holes",
+        "description": "Deal 3(4) damage 5 times."
+    },
+    {
+        "name": "Setup",
+        "description": "Place a card in your hand on top of your draw pile. It costs 0 until it is played."
+    },
+    {
+        "name": "Skewer",
+        "description": "Deal 7(10) damage X times."
+    },
+    {
+        "name": "Tactician",
+        "description": "Unplayable. If this card is discarded from your hand, gain 1(2) Energy."
+    },
+    {
+        "name": "Terror",
+        "description": "Apply 99  Vulnerable. Exhaust."
+    },
+    {
+        "name": "Well-Laid Plans",
+        "description": "At the end of your turn,  Retain up to 1(2) card(s)."
+    },
+    {
+        "name": "A Thousand Cuts",
+        "description": "Whenever you play a card, deal 1(2) damage to ALL enemies."
+    },
+    {
+        "name": "Adrenaline",
+        "description": "Gain 1(2) Energy. Draw 2 cards. Exhaust."
+    },
+    {
+        "name": "After Image",
+        "description": "(Innate.)\n\nWhenever you play a card, gain 1  Block."
+    },
+    {
+        "name": "Alchemize",
+        "description": "Obtain a random potion.\n\nExhaust."
+    },
+    {
+        "name": "Bullet Time",
+        "description": "You cannot draw additional cards this turn. Reduce the cost of all cards in your hand to 0 this turn."
+    },
+    {
+        "name": "Burst",
+        "description": "This turn, your next 1(2) Skill(s) is(are) played twice."
+    },
+    {
+        "name": "Corpse Explosion",
+        "description": "Apply 6(9)  Poison. When the enemy dies, deal damage equal to its max HP to ALL enemies."
+    },
+    {
+        "name": "Die Die Die",
+        "description": "Deal 13(17) damage to ALL enemies. \n\nExhaust."
+    },
+    {
+        "name": "Doppelganger",
+        "description": "Next turn, draw X(+1) cards and gain X(+1) Energy."
+    },
+    {
+        "name": "Envenom",
+        "description": "Whenever an attack deals unblocked damage, apply 1  Poison."
+    },
+    {
+        "name": "Glass Knife",
+        "description": "Deal 8(12) damage twice. Decrease the damage of this card by 2 this combat."
+    },
+    {
+        "name": "Grand Finale",
+        "description": "Can only be played if there are no cards in your draw pile. Deal 50(60) damage to ALL enemies."
+    },
+    {
+        "name": "Malaise",
+        "description": "Enemy loses X(+1)  Strength. Apply X(+1)  Weak. Exhaust."
+    },
+    {
+        "name": "Nightmare",
+        "description": "Choose a card.\n\nNext turn, add 3 copies of that card into your hand.\n\nExhaust."
+    },
+    {
+        "name": "Phantasmal Killer",
+        "description": "On your next turn, your Attacks deal double damage."
+    },
+    {
+        "name": "Storm of Steel",
+        "description": "Discard your hand. Add 1 Shiv(+) into your hand for each card discarded."
+    },
+    {
+        "name": "Tools of the Trade",
+        "description": "At the start of your turn, draw 1 card and discard 1 card."
+    },
+    {
+        "name": "Unload",
+        "description": "Deal 14(18) damage. Discard all non-Attack cards in your hand."
+    },
+    {
+        "name": "Wraith Form",
+        "description": "Gain 2(3)  Intangible. At the end of your turn, lose 1  Dexterity."
+    },
+    {
+        "name": "Dualcast",
+        "description": "Evoke your next Orb twice."
+    },
+    {
+        "name": "Zap",
+        "description": "Channel 1  Lightning."
+    },
+    {
+        "name": "Ball Lightning",
+        "description": "Deal 7(10) damage. Channel 1  Lightning."
+    },
+    {
+        "name": "Barrage",
+        "description": "Deal 4(6) damage for each Channeled Orb."
+    },
+    {
+        "name": "Beam Cell",
+        "description": "Deal 3(4) damage and apply 1(2)  Vulnerable."
+    },
+    {
+        "name": "Charge Battery",
+        "description": "Gain 7(10)  Block.\n\nNext turn, gain 1 Energy."
+    },
+    {
+        "name": "Claw",
+        "description": "Deal 3(5) damage.\n\nIncrease the damage of ALL Claw cards by 2 this combat."
+    },
+    {
+        "name": "Cold Snap",
+        "description": "Deal 6(9) damage. Channel 1  Frost."
+    },
+    {
+        "name": "Compile Driver",
+        "description": "Deal 7(10) damage. Draw 1 card for each unique Orb you have."
+    },
+    {
+        "name": "Coolheaded",
+        "description": "Channel 1  Frost.\n\nDraw 1(2) card(s)."
+    },
+    {
+        "name": "Go for the Eyes",
+        "description": "Deal 3(4) damage. If the enemy intends to attack, apply 1(2)  Weak."
+    },
+    {
+        "name": "Hologram",
+        "description": "Gain 3(5)  Block.\n\nReturn a card from your discard pile to your hand. Exhaust (does not Exhaust)."
+    },
+    {
+        "name": "Leap",
+        "description": "Gain 9(12)  Block."
+    },
+    {
+        "name": "Rebound",
+        "description": "Deal 9(12) damage.\n\nPut the next card you play this turn on top of your draw pile."
+    },
+    {
+        "name": "Recursion",
+        "description": "Evoke your next Orb.\n\nChannel the Orb that was just Evoked."
+    },
+    {
+        "name": "Stack",
+        "description": "Gain  Block equal to the number of cards in your discard pile (+3)."
+    },
+    {
+        "name": "Steam Barrier",
+        "description": "Gain 6(8)  Block. Decrease this card's Block by 1 this combat."
+    },
+    {
+        "name": "Streamline",
+        "description": "Deal 15(20) damage.\n\nWhenever you play this card, reduce its cost by 1 for this combat."
+    },
+    {
+        "name": "Sweeping Beam",
+        "description": "Deal 6(9) damage to ALL enemies.\n\nDraw 1 card."
+    },
+    {
+        "name": "TURBO",
+        "description": "Gain 2(3) Energy.\n\nAdd a Void into your discard pile."
+    },
+    {
+        "name": "Aggregate",
+        "description": "Gain 1 Energy for every 4(3) cards in your draw pile."
+    },
+    {
+        "name": "Auto-Shields",
+        "description": "If you have no  Block, gain 11(15)  Block."
+    },
+    {
+        "name": "Blizzard",
+        "description": "Deal damage equal to 2(3) times the number of  Frost Channeled this combat to ALL enemies."
+    },
+    {
+        "name": "Boot Sequence",
+        "description": "Innate.\n\nGain 10(13)  Block.\n\nExhaust."
+    },
+    {
+        "name": "Bullseye",
+        "description": "Deal 8(11) damage.\n\nApply 2(3)  Lock-On."
+    },
+    {
+        "name": "Capacitor",
+        "description": "Gain 2(3) Orb slots."
+    },
+    {
+        "name": "Chaos",
+        "description": "Channel 1(2) random Orb(s)."
+    },
+    {
+        "name": "Chill",
+        "description": "(Innate.)\n\nChannel 1  Frost for each enemy in combat (per enemy in combat).\n\nExhaust."
+    },
+    {
+        "name": "Consume",
+        "description": "Gain 2(3)  Focus.\n\nLose 1 Orb Slot."
+    },
+    {
+        "name": "Darkness",
+        "description": "Channel 1  Dark. (Trigger the passive ability of all  Dark orbs.)"
+    },
+    {
+        "name": "Defragment",
+        "description": "Gain 1(2)  Focus."
+    },
+    {
+        "name": "Doom and Gloom",
+        "description": "Deal 10(14) damage to ALL enemies.\n\nChannel 1  Dark."
+    },
+    {
+        "name": "Double Energy",
+        "description": "Double your Energy.\n\nExhaust."
+    },
+    {
+        "name": "Equilibrium",
+        "description": "Gain 13(16)  Block.\n\n Retain your hand this turn."
+    },
+    {
+        "name": "FTL",
+        "description": "Deal 5(6) damage. If you have played less than 3(4) cards this turn, draw 1 card."
+    },
+    {
+        "name": "Force Field",
+        "description": "Costs 1 less Energy for each Power card played this combat.\n\nGain 12(16)  Block."
+    },
+    {
+        "name": "Fusion",
+        "description": "Channel 1  Plasma."
+    },
+    {
+        "name": "Genetic Algorithm",
+        "description": "Gain 1  Block. Permanently increase this card's  Block by 2(3).\n\nExhaust."
+    },
+    {
+        "name": "Glacier",
+        "description": "Gain 7(10)  Block.\n\nChannel 2  Frost."
+    },
+    {
+        "name": "Heatsinks",
+        "description": "Whenever you play a Power card, draw 1(2) card(s)."
+    },
+    {
+        "name": "Hello World",
+        "description": "(Innate.)\n\nAt the start of your turn, add a random Common card into your hand."
+    },
+    {
+        "name": "Loop",
+        "description": "At the start of your turn, trigger the passive ability of your next Orb (2 times)."
+    },
+    {
+        "name": "Melter",
+        "description": "Remove all  Block from an enemy.\n\nDeal 10(14) damage."
+    },
+    {
+        "name": "Overclock",
+        "description": "Draw 2(3) cards.\n\nAdd a Burn into your discard pile."
+    },
+    {
+        "name": "Recycle",
+        "description": "Exhaust a card.\n\nGain Energy equal to its cost."
+    },
+    {
+        "name": "Reinforced Body",
+        "description": "Gain 7(9)  Block X times."
+    },
+    {
+        "name": "Reprogram",
+        "description": "Lose 1(2)  Focus. Gain 1(2)  Strength. Gain 1(2)  Dexterity."
+    },
+    {
+        "name": "Rip and Tear",
+        "description": "Deal 7(9) damage to a random enemy 2 times."
+    },
+    {
+        "name": "Scrape",
+        "description": "Deal 7(10) damage.\n\nDraw 4(5) cards.\n\nDiscard all cards drawn this way that do not cost 0."
+    },
+    {
+        "name": "Self Repair",
+        "description": "At the end of combat, heal 7(10) HP."
+    },
+    {
+        "name": "Skim",
+        "description": "Draw 3(4) cards."
+    },
+    {
+        "name": "Static Discharge",
+        "description": "Whenever you take attack damage, Channel 1(2)  Lightning."
+    },
+    {
+        "name": "Storm",
+        "description": "(Innate.)\n\nWhenever you play a Power card, Channel 1  Lightning."
+    },
+    {
+        "name": "Sunder",
+        "description": "Deal 24(32) damage.\n\nIf this kills an enemy, gain 3 Energy."
+    },
+    {
+        "name": "Tempest",
+        "description": "Channel X(+1)  Lightning.\n\nExhaust."
+    },
+    {
+        "name": "White Noise",
+        "description": "Add a random Power to your hand.\n\nIt costs 0 this turn.\n\nExhaust."
+    },
+    {
+        "name": "All for One",
+        "description": "Deal 10(14) damage. Put all cost 0 cards from your discard pile into your hand."
+    },
+    {
+        "name": "Amplify",
+        "description": "This turn, your next 1(2) Power(s) is (are) played twice."
+    },
+    {
+        "name": "Biased Cognition",
+        "description": "Gain 4(5)  Focus.\n\nAt the start of each turn, lose 1  Focus."
+    },
+    {
+        "name": "Buffer",
+        "description": "Prevent the next (1(2)) time(s) you would lose HP."
+    },
+    {
+        "name": "Core Surge",
+        "description": "Deal 11(15) damage.\n\nGain 1  Artifact.\n\nExhaust."
+    },
+    {
+        "name": "Creative AI",
+        "description": "At the start of each turn, add a random Power card to your hand."
+    },
+    {
+        "name": "Echo Form",
+        "description": "Ethereal. (not Ethereal.) The first card you play each turn is played twice."
+    },
+    {
+        "name": "Electrodynamics",
+        "description": "Lightning now hits ALL enemies.\n\nChannel 2(3)  Lightning."
+    },
+    {
+        "name": "Fission",
+        "description": "Remove (Evoke) ALL of your Orbs. Gain 1 Energy and draw 1 card for each Orb removed(Evoked). Exhaust."
+    },
+    {
+        "name": "Hyperbeam",
+        "description": "Deal 26(34) damage to ALL enemies.\n\nLose 3  Focus."
+    },
+    {
+        "name": "Machine Learning",
+        "description": "(Innate.)\n\nAt the start of your turn, draw 1 additional card."
+    },
+    {
+        "name": "Meteor Strike",
+        "description": "Deal 24(30) damage.\n\nChannel 3  Plasma."
+    },
+    {
+        "name": "Multi-Cast",
+        "description": "Evoke your next Orb X (X+1) times."
+    },
+    {
+        "name": "Rainbow",
+        "description": "Channel 1  Lightning, 1  Frost, and 1  Dark.\n\nExhaust. (does not Exhaust.)"
+    },
+    {
+        "name": "Reboot",
+        "description": "Shuffle all of your cards into your draw pile, then draw 4(6) cards.\n\nExhaust."
+    },
+    {
+        "name": "Seek",
+        "description": "Choose a (2) card(s) from your draw pile and place it (them) into your hand.\n\nExhaust."
+    },
+    {
+        "name": "Thunder Strike",
+        "description": "Deal 7(9) damage to a random enemy for each  Lightning Channeled this combat."
+    },
+    {
+        "name": "Eruption",
+        "description": "Deal 9 damage. Enter Wrath."
+    },
+    {
+        "name": "Vigilance",
+        "description": "Enter Calm. Gain 8(12)  Block."
+    },
+    {
+        "name": "Bowling Bash",
+        "description": "Deal 7(10) damage for each enemy in combat."
+    },
+    {
+        "name": "Consecrate",
+        "description": "Deal 5(8) damage to ALL enemies."
+    },
+    {
+        "name": "Crescendo",
+        "description": "Retain. Enter Wrath. Exhaust."
+    },
+    {
+        "name": "Crush Joints",
+        "description": "Deal 8(10) damage. If the previous card played was a skill, apply 1(2)  Vulnerable."
+    },
+    {
+        "name": "Cut Through Fate",
+        "description": "Deal 7(9) damage. Scry 2(3). Draw 1 card."
+    },
+    {
+        "name": "Empty Body",
+        "description": "Gain 7(10)  Block. Exit your Stance."
+    },
+    {
+        "name": "Empty Fist",
+        "description": "Deal 9(14) damage. Exit your Stance."
+    },
+    {
+        "name": "Evaluate",
+        "description": "Gain 6(10)  Block. Shuffle an Insight into your draw pile."
+    },
+    {
+        "name": "Flurry of Blows",
+        "description": "Deal 4(6) damage. On Stance change, returns from the Discard Pile into your hand."
+    },
+    {
+        "name": "Flying Sleeves",
+        "description": "Retain. Deal 4(6) damage twice."
+    },
+    {
+        "name": "Follow-Up",
+        "description": "Deal 7(11) damage. If the previous card played was an Attack, gain 1 Energy."
+    },
+    {
+        "name": "Halt",
+        "description": "Gain 3(4)  Block. Wrath: Gain 9(14) additional  Block."
+    },
+    {
+        "name": "Just Lucky",
+        "description": "Scry 1(2). Gain 2(3)  Block. Deal 3(4) damage."
+    },
+    {
+        "name": "Pressure Points",
+        "description": "Apply 8(11) Mark. ALL enemies lose HP equal to their Mark."
+    },
+    {
+        "name": "Prostrate",
+        "description": "Gain 2(3)  Mantra. Gain 4  Block."
+    },
+    {
+        "name": "Protect",
+        "description": "Retain. Gain 12(16)  Block."
+    },
+    {
+        "name": "Sash Whip",
+        "description": "Deal 8(10) damage. If the last card played this combat was an Attack, apply 1(2)  Weak."
+    },
+    {
+        "name": "Third Eye",
+        "description": "Gain 7(9)  Block. Scry 3(5)."
+    },
+    {
+        "name": "Tranquility",
+        "description": "Retain. Enter Calm. Exhaust."
+    },
+    {
+        "name": "Battle Hymn",
+        "description": "(Innate.) At the start of each turn add a Smite into your hand."
+    },
+    {
+        "name": "Carve Reality",
+        "description": "Deal 6(10) damage. Add a Smite into your hand."
+    },
+    {
+        "name": "Collect",
+        "description": "Put an Miracle+ into your hand at the start of your next X(+1) turns. Exhaust."
+    },
+    {
+        "name": "Conclude",
+        "description": "Deal 12(16) damage to ALL enemies. End your turn."
+    },
+    {
+        "name": "Deceive Reality",
+        "description": "Gain 4(7)  Block. Add a Safety to your hand."
+    },
+    {
+        "name": "Empty Mind",
+        "description": "Exit your Stance. Draw 2(3) cards."
+    },
+    {
+        "name": "Fasting",
+        "description": "Gain 3(4)  Strength. Gain 3(4)  Dexterity. Gain 1 less Energy at the start of each turn."
+    },
+    {
+        "name": "Fear No Evil",
+        "description": "Deal 8(11) damage. If the enemy intends to Attack, enter Calm."
+    },
+    {
+        "name": "Foreign Influence",
+        "description": "Choose 1 of 3 Attacks of any color to add to your hand. (It costs 0 this turn.) Exhaust."
+    },
+    {
+        "name": "Foresight",
+        "description": "At the start of your turn, Scry 3(4)."
+    },
+    {
+        "name": "Indignation",
+        "description": "If you are in Wrath, apply 3(5)  Vulnerable to ALL enemies, otherwise enter Wrath."
+    },
+    {
+        "name": "Inner Peace",
+        "description": "If you are in Calm, draw 3(4) cards, otherwise Enter Calm."
+    },
+    {
+        "name": "Like Water",
+        "description": "At the end of your turn, if you are in Calm, gain 5(7)  Block."
+    },
+    {
+        "name": "Meditate",
+        "description": "Put 1(2) card(s) from your discard pile into your hand and  Retain it. Enter Calm. End your turn."
+    },
+    {
+        "name": "Mental Fortress",
+        "description": "Whenever you switch Stances, gain 4(6)  Block."
+    },
+    {
+        "name": "Nirvana",
+        "description": "Whenever you Scry, gain 3(4)  Block."
+    },
+    {
+        "name": "Perseverance",
+        "description": "Retain. Gain 5(7)  Block. Whenever this card is  Retained, increase its  Block by 2(3)."
+    },
+    {
+        "name": "Pray",
+        "description": "Gain 3(4)  Mantra. Shuffle an Insight into your draw pile."
+    },
+    {
+        "name": "Reach Heaven",
+        "description": "Deal 10(15) damage. Shuffle a Through Violence into your draw pile."
+    },
+    {
+        "name": "Rushdown",
+        "description": "Whenever you enter Wrath, draw 2 cards."
+    },
+    {
+        "name": "Sanctity",
+        "description": "Gain 6(9)  Block. If the previous card played was a Skill, draw 2 card."
+    },
+    {
+        "name": "Sands of Time",
+        "description": "Retain. Deal 20(26) damage. Whenever this card is  Retained, lower its cost by 1."
+    },
+    {
+        "name": "Signature Move",
+        "description": "Can only be played if this is the only attack in your hand. Deal 30(40) damage."
+    },
+    {
+        "name": "Simmering Fury",
+        "description": "At the start of your next turn, enter Wrath and draw 2(3) cards."
+    },
+    {
+        "name": "Study",
+        "description": "At the end of your turn, shuffle an Insight into your draw pile."
+    },
+    {
+        "name": "Swivel",
+        "description": "Gain 8(11)  Block. The next Attack you play costs 0."
+    },
+    {
+        "name": "Talk to the Hand",
+        "description": "Deal 5(7) damage. Whenever you attack this enemy, gain 2(3)  Block. Exhaust."
+    },
+    {
+        "name": "Tantrum",
+        "description": "Deal 3 damage 3(4) times. Enter Wrath. Shuffle this card into your draw pile."
+    },
+    {
+        "name": "Wallop",
+        "description": "Deal 9(12) damage. Gain  Block equal to unblocked damage dealt."
+    },
+    {
+        "name": "Wave of the Hand",
+        "description": "Whenever you gain  Block this turn, apply 1(2)  Weak to ALL enemies."
+    },
+    {
+        "name": "Weave",
+        "description": "Deal 4(6) damage. Whenever you Scry, return this from the discard pile to your Hand."
+    },
+    {
+        "name": "Wheel Kick",
+        "description": "Deal 15(20) damage. Draw 2 cards."
+    },
+    {
+        "name": "Windmill Strike",
+        "description": "Retain. Deal 7(10) damage. Whenever this card is  Retained, increase its damage by 4(5)."
+    },
+    {
+        "name": "Worship",
+        "description": "( Retain.) Gain 5  Mantra."
+    },
+    {
+        "name": "Wreath of Flame",
+        "description": "Your next Attack deals 5(8) additional damage."
+    },
+    {
+        "name": "Alpha",
+        "description": "(Innate.) Shuffle a Beta into your draw pile. Exhaust."
+    },
+    {
+        "name": "Blasphemy",
+        "description": "(Retain.) Enter Divinity. Die next turn. Exhaust."
+    },
+    {
+        "name": "Brilliance",
+        "description": "Deal 12(16) damage. Deals additional damage for all  Mantra gained this combat."
+    },
+    {
+        "name": "Conjure Blade",
+        "description": "Shuffle an Expunger with X(+1) into your draw pile. Exhaust."
+    },
+    {
+        "name": "Deus Ex Machina",
+        "description": "Unplayable. When you draw this card, add 2(3) Miracles into your hand. Exhaust."
+    },
+    {
+        "name": "Deva Form",
+        "description": "Ethereal. At the start of your turn, gain Energy and increase this gain by 1. (not Ethereal.)"
+    },
+    {
+        "name": "Devotion",
+        "description": "At the start of your turn, gain 2(3)  Mantra."
+    },
+    {
+        "name": "Establishment",
+        "description": "(Innate.) Whenever a card is  Retained, lower its cost by 1."
+    },
+    {
+        "name": "Judgment",
+        "description": "If the enemy has 30(40) or less HP, set their HP to 0."
+    },
+    {
+        "name": "Lesson Learned",
+        "description": "Deal 10(13) damage. If Fatal, Upgrade a random card in your deck. Exhaust."
+    },
+    {
+        "name": "Master Reality",
+        "description": "Whenever a card is created during combat, Upgrade it."
+    },
+    {
+        "name": "Omniscience",
+        "description": "Choose a card in your draw pile. Play the chosen card twice and Exhaust it. Exhaust."
+    },
+    {
+        "name": "Ragnarok",
+        "description": "Deal 5(6) damage to a random enemy 5(6) times."
+    },
+    {
+        "name": "Scrawl",
+        "description": "Draw cards until your hand is full. Exhaust."
+    },
+    {
+        "name": "Spirit Shield",
+        "description": "Gain 3(4)  Block for each card in your hand."
+    },
+    {
+        "name": "Vault",
+        "description": "Take an extra turn after this one. End your turn. Exhaust."
+    },
+    {
+        "name": "Wish",
+        "description": "Choose one: Gain 6(8)  Plated Armor, 3(4)  Strength, or 25(30) Gold. Exhaust."
+    },
+    {
+        "name": "Bandage Up",
+        "description": "Heal 4(6) HP.\n\nExhaust."
+    },
+    {
+        "name": "Blind",
+        "description": "Apply 2  Weak (to ALL enemies)."
+    },
+    {
+        "name": "Dark Shackles",
+        "description": "Enemy loses 9(15)  Strength for the rest of this turn.\n\nExhaust."
+    },
+    {
+        "name": "Deep Breath",
+        "description": "Shuffle your discard pile into your draw pile.\n\nDraw 1(2) card(s)."
+    },
+    {
+        "name": "Discovery",
+        "description": "Choose 1 of 3 random cards to add to your hand. It costs 0 this turn. Exhaust. (Don't Exhaust.)"
+    },
+    {
+        "name": "Dramatic Entrance",
+        "description": "Innate.\n\nDeal 8(12) damage to ALL enemies. Exhaust."
+    },
+    {
+        "name": "Enlightenment",
+        "description": "Reduce the cost of cards in your hand to 1 this turn(combat)."
+    },
+    {
+        "name": "Finesse",
+        "description": "Gain 2(4)  Block.\n\nDraw 1 card."
+    },
+    {
+        "name": "Flash of Steel",
+        "description": "Deal 3(6) damage.\n\nDraw 1 card."
+    },
+    {
+        "name": "Forethought",
+        "description": "Place a card(any number of cards) from your hand on the bottom of your draw pile. It (They) costs 0 until played."
+    },
+    {
+        "name": "Good Instincts",
+        "description": "Gain 6(9)  Block."
+    },
+    {
+        "name": "Impatience",
+        "description": "If you have no Attack cards in your hand, draw 2(3) cards."
+    },
+    {
+        "name": "Jack Of All Trades",
+        "description": "Add 1(2) random Colorless card(s) to your hand.\n\nExhaust."
+    },
+    {
+        "name": "Madness",
+        "description": "A random card in your hand costs 0 for the rest of combat. Exhaust."
+    },
+    {
+        "name": "Mind Blast",
+        "description": "Innate.\n\nDeal damage equal to the number of cards in your draw pile."
+    },
+    {
+        "name": "Panacea",
+        "description": "Gain 1(2)  Artifact.\n\nExhaust."
+    },
+    {
+        "name": "Panic Button",
+        "description": "Gain 30(40)  Block. You cannot gain  Block from cards for the next 2 turns. Exhaust."
+    },
+    {
+        "name": "Purity",
+        "description": "Choose and Exhaust 3(5) cards in your hand. Exhaust."
+    },
+    {
+        "name": "Swift Strike",
+        "description": "Deal 7(10) damage."
+    },
+    {
+        "name": "Trip",
+        "description": "Apply 2  Vulnerable (to ALL enemies)."
+    },
+    {
+        "name": "Apotheosis",
+        "description": "Upgrade ALL of your cards for the rest of combat. Exhaust."
+    },
+    {
+        "name": "Chrysalis",
+        "description": "Add 3(5) random Skills into your Draw Pile. They cost 0 this combat. Exhaust."
+    },
+    {
+        "name": "Hand of Greed",
+        "description": "Deal 20(25) damage. If this kills a non-minion enemy, gain 20(25) Gold."
+    },
+    {
+        "name": "Magnetism",
+        "description": "At the start of each turn, add a random colorless card to your hand."
+    },
+    {
+        "name": "Master Of Strategy",
+        "description": "Draw 3(4) cards. Exhaust."
+    },
+    {
+        "name": "Mayhem",
+        "description": "At the start of your turn, play the top card of your draw pile."
+    },
+    {
+        "name": "Metamorphosis",
+        "description": "Add 3(5) random Attacks into your Draw Pile. They cost 0 this combat. Exhaust."
+    },
+    {
+        "name": "Panache",
+        "description": "Every time you play 5 cards in a single turn, deal 10(14) damage to ALL enemies."
+    },
+    {
+        "name": "Sadistic Nature",
+        "description": "Whenever you apply a Debuff to an enemy, they take 5(7) damage."
+    },
+    {
+        "name": "Secret Technique",
+        "description": "Choose a Skill from your draw pile and place it into your hand. Exhaust. (Don't Exhaust)"
+    },
+    {
+        "name": "Secret Weapon",
+        "description": "Choose an Attack from your draw pile and place it into your hand. Exhaust. (Don't Exhaust)"
+    },
+    {
+        "name": "The Bomb",
+        "description": "At the end of 3 turns, deal 40(50) damage to ALL enemies."
+    },
+    {
+        "name": "Thinking Ahead",
+        "description": "Draw 2 cards. Place a card from your hand on top of your draw pile. Exhaust.\n\n(Don't Exhaust)"
+    },
+    {
+        "name": "Transmutation",
+        "description": "Add X random (Upgraded) colorless cards into your hand. They cost 0 this turn. Exhaust."
+    },
+    {
+        "name": "Violence",
+        "description": "Place 3(4) random Attack cards from your draw pile into your hand. Exhaust."
+    },
+    {
+        "name": "Apparition",
+        "description": "Gain 1  Intangible. Exhaust. Ethereal. (no longer Ethereal.)\n\n(Obtained from event: Council of Ghosts)."
+    },
+    {
+        "name": "Beta",
+        "description": "Shuffle an\n\nOmega into your draw pile. Exhaust.\n\n(Obtained from Alpha)."
+    },
+    {
+        "name": "Bite",
+        "description": "Deal 7(8) damage. Heal 2(3) HP.\n\n(Obtained from event: Vampires(?))."
+    },
+    {
+        "name": "Expunger",
+        "description": "Deal 9(15) damage X times.\n\n(Obtained from Conjure Blade)."
+    },
+    {
+        "name": "Insight",
+        "description": "Retain. Draw 2(3) cards. Exhaust.\n\n(Obtained from Evaluate, Pray and Study)."
+    },
+    {
+        "name": "J.A.X.",
+        "description": "Lose 3 HP.\n\nGain 2(3)  Strength.\n\n(Obtained from event: Augmenter)."
+    },
+    {
+        "name": "Miracle",
+        "description": "Retain. Gain (2) Energy. Exhaust.\n\n(Obtained from Collect, Deus Ex Machina,  Pure Water, and  Holy Water)."
+    },
+    {
+        "name": "Omega",
+        "description": "At the end of your turn deal 50(60) damage to ALL enemies.\n\n(Obtained from Beta)."
+    },
+    {
+        "name": "Ritual Dagger",
+        "description": "Deal 15 damage. If this kills an enemy then permanently increase this card's damage by 3(5). Exhaust.\n\n(Obtained during event: The Nest)"
+    },
+    {
+        "name": "Safety",
+        "description": "Retain. Gain 12(16)  Block. Exhaust.\n\n(Obtained from Deceive Reality)."
+    },
+    {
+        "name": "Shiv",
+        "description": "Deal 4(6) damage. Exhaust.\n\n(Obtained from Blade Dance, Cloak and Dagger, Infinite Blades, Storm of Steel, and  Ninja Scroll)."
+    },
+    {
+        "name": "Smite",
+        "description": "Retain. Deal 12(16) damage. Exhaust.\n\n(Obtained from Carve Reality and Battle Hymn)."
+    },
+    {
+        "name": "Through Violence",
+        "description": "Retain. Deal 20(30) damage. Exhaust.\n\n(Obtained from Reach Heaven)."
+    },
+    {
+        "name": "Ascender's Bane",
+        "description": "Unplayable.\n\nCannot be removed from your deck. Ethereal."
+    },
+    {
+        "name": "Clumsy",
+        "description": "Unplayable.\n\nEthereal."
+    },
+    {
+        "name": "Curse of the Bell",
+        "description": "Unplayable. Cannot be removed from your deck."
+    },
+    {
+        "name": "Decay",
+        "description": "Unplayable.\n\nAt the end of your turn, take 2 damage."
+    },
+    {
+        "name": "Doubt",
+        "description": "Unplayable.\n\nAt the end of your turn, gain 1  Weak."
+    },
+    {
+        "name": "Injury",
+        "description": "Unplayable."
+    },
+    {
+        "name": "Necronomicurse",
+        "description": "Unplayable.\n\nThere is no escape from this Curse. (Cannot be Removed from your deck. When Exhausted, a new copy appears in your hand.)"
+    },
+    {
+        "name": "Normality",
+        "description": "Unplayable.\n\nYou cannot play more than 3 cards this turn."
+    },
+    {
+        "name": "Pain",
+        "description": "Unplayable.\n\nWhile in hand, lose 1 HP when other cards are played."
+    },
+    {
+        "name": "Parasite",
+        "description": "Unplayable.\n\nIf transformed or removed from your deck, lose 3 Max HP."
+    },
+    {
+        "name": "Pride",
+        "description": "Innate.\n\nAt the end of your turn, put a copy of this card on top of your draw pile. Exhaust."
+    },
+    {
+        "name": "Regret",
+        "description": "Unplayable.\n\nAt the end of your turn, lose HP equal to the number of cards in your hand."
+    },
+    {
+        "name": "Shame",
+        "description": "Unplayable.\n\nAt the end of your turn, gain 1  Frail."
+    },
+    {
+        "name": "Writhe",
+        "description": "Unplayable.\n\nInnate."
+    },
+    {
+        "name": "Burn",
+        "description": "Unplayable.\n\nAt the end of your turn, take 2(4) damage."
+    },
+    {
+        "name": "Dazed",
+        "description": "Unplayable.\n\nEthereal."
+    },
+    {
+        "name": "Wound",
+        "description": "Unplayable."
+    },
+    {
+        "name": "Slimed",
+        "description": "Exhaust."
+    },
+    {
+        "name": "Void",
+        "description": "Unplayable.\n\nWhen this card is drawn, lose 1 Energy. Ethereal."
+    }
+]

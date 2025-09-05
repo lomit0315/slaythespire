@@ -1,0 +1,438 @@
+[
+    {
+        "name": "Artifact",
+        "description": "Negates X debuffs."
+    },
+    {
+        "name": "Barricade",
+        "description": "Block is not removed at the start of turn."
+    },
+    {
+        "name": "Buffer",
+        "description": "Prevent the next X times you would lose HP."
+    },
+    {
+        "name": "Dexterity",
+        "description": "Increases  Block gained from cards by X."
+    },
+    {
+        "name": "Draw Card",
+        "description": "Draw X additional cards next turn."
+    },
+    {
+        "name": "Energized",
+        "description": "Gain X additional Energy next turn."
+    },
+    {
+        "name": "Focus",
+        "description": "Increases the effectiveness of Orbs by X."
+    },
+    {
+        "name": "Intangible",
+        "description": "Reduce ALL damage taken and HP loss to 1 this turn. (lasts X turns)"
+    },
+    {
+        "name": "Mantra",
+        "description": "When you gain 10 Mantra, enter Divinity."
+    },
+    {
+        "name": "Metallicize",
+        "description": "At the end of your/its turn, gain X  Block."
+    },
+    {
+        "name": "Next Turn Block",
+        "description": "Gain X  Block next turn."
+    },
+    {
+        "name": "Plated Armor",
+        "description": "At the end of your turn, gain X  Block. Receiving unblocked attack damage reduces Plated Armor by 1."
+    },
+    {
+        "name": "Regenerate",
+        "description": "At the end of its turn, heals X HP."
+    },
+    {
+        "name": "Ritual",
+        "description": "At the end of its turn, gains X  Strength."
+    },
+    {
+        "name": "Strength",
+        "description": "Increases attack damage by X."
+    },
+    {
+        "name": "Thorns",
+        "description": "When attacked, deals X damage back."
+    },
+    {
+        "name": "Vigor",
+        "description": "Your next Attack deals X additional damage."
+    },
+    {
+        "name": "Accuracy",
+        "description": "Shivs deal X additional damage."
+    },
+    {
+        "name": "After Image",
+        "description": "Whenever you play a card, gain X  Block."
+    },
+    {
+        "name": "Amplify",
+        "description": "Your next X Power cards are played twice."
+    },
+    {
+        "name": "Battle Hymn",
+        "description": "At the start of each turn add X Smites into your hand."
+    },
+    {
+        "name": "Berserk",
+        "description": "At the start of your turn, gain X Energy."
+    },
+    {
+        "name": "Blasphemer",
+        "description": "At the start of your turn, die. [1]"
+    },
+    {
+        "name": "Blur",
+        "description": "Block is not removed at the start of your next X turns."
+    },
+    {
+        "name": "Brutality",
+        "description": "At the start of your turn, lose X HP and draw X cards."
+    },
+    {
+        "name": "Burst",
+        "description": "Your next X Skills are played twice."
+    },
+    {
+        "name": "Collect",
+        "description": "Put a Miracle+ into your hand at the start of your next X turns."
+    },
+    {
+        "name": "Combust",
+        "description": "At the end of your turn, lose 1 HP(for each Combust played) and deal X damage to ALL enemies."
+    },
+    {
+        "name": "Corruption",
+        "description": "Skills cost 0. Whenever you play a Skill, Exhaust it."
+    },
+    {
+        "name": "Creative AI",
+        "description": "At the start of your turn, add X random Power cards into your hand."
+    },
+    {
+        "name": "Dark Embrace",
+        "description": "Whenever a card is Exhausted, draw X cards."
+    },
+    {
+        "name": "Demon Form",
+        "description": "At the start of your turn, gain X  Strength."
+    },
+    {
+        "name": "Deva",
+        "description": "At the start of your turn gain Energy N times and increase this gain by X."
+    },
+    {
+        "name": "Devotion",
+        "description": "At the start of your turn, gain X  Mantra."
+    },
+    {
+        "name": "Double Damage",
+        "description": "Attacks deal double damage for X turns."
+    },
+    {
+        "name": "Double Tap",
+        "description": "Your next X Attacks are played twice."
+    },
+    {
+        "name": "Duplication",
+        "description": "Your next X cards are played twice."
+    },
+    {
+        "name": "Echo Form",
+        "description": "The first X cards you play each turn are played twice."
+    },
+    {
+        "name": "Electro",
+        "description": "Lightning hits ALL enemies."
+    },
+    {
+        "name": "Envenom",
+        "description": "Whenever you deal unblocked attack damage, apply X  Poison."
+    },
+    {
+        "name": "Equilibrium",
+        "description": "Retain your hand for X turns."
+    },
+    {
+        "name": "Establishment",
+        "description": "Whenever a card is  Retained, lower its cost by X."
+    },
+    {
+        "name": "Evolve",
+        "description": "Whenever you draw a Status, draw X cards."
+    },
+    {
+        "name": "Feel No Pain",
+        "description": "Whenever a card is Exhausted, gain X  Block."
+    },
+    {
+        "name": "Fire Breathing",
+        "description": "Whenever you draw a Status or Curse card, deal X damage to ALL enemies."
+    },
+    {
+        "name": "Flame Barrier",
+        "description": "When attacked, deals X damage back. Wears off at the start of your next turn."
+    },
+    {
+        "name": "Foresight",
+        "description": "At the start of your turn, Scry X."
+    },
+    {
+        "name": "Free Attack Power",
+        "description": "The next X Attacks you play costs 0."
+    },
+    {
+        "name": "Heatsink",
+        "description": "Whenever you play a Power card, draw X cards."
+    },
+    {
+        "name": "Hello",
+        "description": "At the start of your turn, add X random Common cards into your hand."
+    },
+    {
+        "name": "Infinite Blades",
+        "description": "At the start of your turn, add X Shivs into your hand."
+    },
+    {
+        "name": "Juggernaut",
+        "description": "Whenever you gain  Block, deal X damage to a random enemy."
+    },
+    {
+        "name": "Like Water",
+        "description": "At the end of your turn, if you are in Calm, gain X  Block."
+    },
+    {
+        "name": "Loop",
+        "description": "At the start of your turn, trigger the passive ability of your next Orb X times."
+    },
+    {
+        "name": "Machine Learning",
+        "description": "At the start of your turn, draw X additional cards."
+    },
+    {
+        "name": "Magnetism",
+        "description": "At the start of your turn, add X random colorless cards into your hand."
+    },
+    {
+        "name": "Master Reality",
+        "description": "Whenever a card is created during combat, Upgrade it."
+    },
+    {
+        "name": "Mayhem",
+        "description": "At the start of your turn, play the top X card of your draw pile."
+    },
+    {
+        "name": "Mental Fortress",
+        "description": "Whenever you switch Stances, gain X  Block."
+    },
+    {
+        "name": "Nightmare",
+        "description": "Add X of a chosen card into your hand next turn."
+    },
+    {
+        "name": "Nirvana",
+        "description": "Whenever you Scry, gain X  Block."
+    },
+    {
+        "name": "Noxious Fumes",
+        "description": "At the start of your turn, apply X  Poison to ALL enemies."
+    },
+    {
+        "name": "Omega",
+        "description": "At the end of your turn, deal X damage to ALL enemies."
+    },
+    {
+        "name": "Panache",
+        "description": "If you play N[5] more cards this turn, deal X damage to all enemies."
+    },
+    {
+        "name": "Pen Nib",
+        "description": "Your next Attack deals double damage."
+    },
+    {
+        "name": "Phantasmal",
+        "description": "Deal Double Damage for the next X turns."
+    },
+    {
+        "name": "Rage",
+        "description": "Whenever you play an Attack, gain X  Block."
+    },
+    {
+        "name": "Rebound",
+        "description": "The next X cards you play this turn are placed on top of your draw pile."
+    },
+    {
+        "name": "Regeneration",
+        "description": "At the end of your turn, heal X HP and reduce  Regen by 1."
+    },
+    {
+        "name": "Rushdown",
+        "description": "Whenever you enter Wrath, draw X cards."
+    },
+    {
+        "name": "Repair",
+        "description": "At the end of combat, heal X HP."
+    },
+    {
+        "name": "Rupture",
+        "description": "Whenever you lose HP from a card, gain X  Strength."
+    },
+    {
+        "name": "Sadistic",
+        "description": "Whenever you apply a debuff to an enemy, deal X damage."
+    },
+    {
+        "name": "Simmering Rage",
+        "description": "At the start of your next turn, enter Wrath."
+    },
+    {
+        "name": "Static Discharge",
+        "description": "Whenever you receive unblocked attack damage, channel X  Lightning."
+    },
+    {
+        "name": "Storm",
+        "description": "Whenever you play a Power card, channel X  Lightning."
+    },
+    {
+        "name": "Study",
+        "description": "At the end of your turn, shuffle X Insights into your draw pile."
+    },
+    {
+        "name": "Surrounded",
+        "description": "Receive 50% more damage if attacked from behind. Use targeting cards or potions to change your orientation."
+    },
+    {
+        "name": "The Bomb",
+        "description": "At the end of N[7] turns, deal X damage to all enemies."
+    },
+    {
+        "name": "Thousand Cuts",
+        "description": "Whenever you play a card, deal X damage to ALL enemies."
+    },
+    {
+        "name": "Tools of the Trade",
+        "description": "At the start of your turn, draw X cards and discard X cards."
+    },
+    {
+        "name": "Wave of the Hand",
+        "description": "Whenever you gain  Block this turn, apply X  Weak to ALL enemies."
+    },
+    {
+        "name": "Well-Laid Plans",
+        "description": "At the end of your turn,  Retain up to X cards."
+    },
+    {
+        "name": "Confused",
+        "description": "The costs of your cards are randomized on draw, from 0 to 3."
+    },
+    {
+        "name": "Dexterity (Negative)",
+        "description": "Decreases  Block gained from cards by X."
+    },
+    {
+        "name": "Dexterity Down",
+        "description": "At the end of your turn, lose X  Dexterity."
+    },
+    {
+        "name": "Focus (Negative)",
+        "description": "Decreases the effectiveness of your Orbs by X."
+    },
+    {
+        "name": "Frail",
+        "description": "Block gained from cards is reduced by 25%."
+    },
+    {
+        "name": "No Draw",
+        "description": "You may not draw any more cards this turn."
+    },
+    {
+        "name": "Poison",
+        "description": "At the beginning of its turn, the target loses X HP and 1 stack of  Poison."
+    },
+    {
+        "name": "Shackled",
+        "description": "At the end of its turn, regains X  Strength."
+    },
+    {
+        "name": "Slow",
+        "description": "The enemy receives (X*10)% more damage from attacks this turn. Whenever you play a card, increases X by 1."
+    },
+    {
+        "name": "Strength (Negative)",
+        "description": "Decreases attack damage by X."
+    },
+    {
+        "name": "Strength Down",
+        "description": "At the end of your turn, lose X  Strength."
+    },
+    {
+        "name": "Vulnerable",
+        "description": "Target takes 50% more damage from attacks."
+    },
+    {
+        "name": "Weak",
+        "description": "Target deals 25% less attack damage."
+    },
+    {
+        "name": "Bias",
+        "description": "At the start of your turn, lose X  Focus."
+    },
+    {
+        "name": "Block Return",
+        "description": "Whenever you attack this enemy, gain X  Block."
+    },
+    {
+        "name": "Choked",
+        "description": "Whenever you play a card this turn, the targeted enemy loses X HP."
+    },
+    {
+        "name": "Constricted",
+        "description": "At the end of your turn, take X damage."
+    },
+    {
+        "name": "Corpse Explosion",
+        "description": "On death, the enemy deals X times its Max HP worth of damage to all other enemies."
+    },
+    {
+        "name": "Draw Reduction",
+        "description": "Draw 1 less card next X turns."
+    },
+    {
+        "name": "Entangled",
+        "description": "You may not play any Attacks this turn."
+    },
+    {
+        "name": "Fasting",
+        "description": "Gain X less Energy at the start of each turn."
+    },
+    {
+        "name": "Hex",
+        "description": "Whenever you play a non-Attack card, add X Dazed to your draw pile."
+    },
+    {
+        "name": "Lock-On",
+        "description": "Lightning and  Dark orbs deal 50% more damage (rounded down) to the targeted enemy."
+    },
+    {
+        "name": "Mark",
+        "description": "Whenever you play Pressure Points, all enemies with Mark lose X HP."
+    },
+    {
+        "name": "No Block",
+        "description": "You may not gain  Block from cards for the next X turns."
+    },
+    {
+        "name": "Wraith Form",
+        "description": "Lose X  Dexterity at the end of your turn."
+    }
+]

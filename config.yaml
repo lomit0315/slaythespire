@@ -1,0 +1,398 @@
+general:
+  character: Ironclad
+  model: ChatGPT_Nano  
+  agent: Random 
+  repetitions: 3
+  research: True
+  log-type: Combat
+
+prompts:
+
+  combat-decision: |
+    You are an AI agent playing the roguelike card game Slay the Spire. You will be provided with game state information and must respond with your next decision.
+
+    ## Current Mode
+    COMBAT
+
+    ## Player Status
+    - Character: {{ chosen_class }}
+    - Current HP: {{ current_hp }}/{{ max_hp }}
+    - Gold: {{ gold }}
+    - Floor: {{ floor }}
+    - Relics: [{{ relic_description if relic_description else "None" }}]
+    - Potions: [{{ potion_description }}]
+    - Block: {{ block }}
+    - Energy: {{ energy }}
+
+    ## Enemies (The X is equal to the amount of the power)
+    - [{{ enemy_description }}]
+
+    ## Hand
+    - [{{ hand_description }}]
+
+    ## Instructions
+    Decide your next action. Format your answer as a JSON object, like:
+
+    {
+    "action": "play_card",
+    "card": "Backstab",
+    "target_index": "1",
+    "strategy_note": "Focusing on early aggression with low-cost attacks to quickly eliminate weaker enemies."
+    }
+
+    If the action has a target, use the target's provided index instead of its name.
+
+    If a card has the "Targeted" attribute as false OR if you are discarding a potion, omit the "target" attribute from the response like this:
+
+    {
+    "action": "use_potion",
+    "potion": "Block Potion",
+    "strategy_note": "Saving high-value potions for elite fights; using the block potion to stay healthy in regular combat."
+    }
+
+    Valid actions include:
+    - "play_card"
+    - "end_turn"
+    - "use_potion"
+    - "discard_potion"
+
+    IMPORTANT: Respond with ONLY the JSON object. No explanations or additional text.
+
+  boss-relic-decision: |
+    You are an AI agent playing the roguelike card game Slay the Spire. You have defeated the Act Boss and must choose one of the offered Boss Relics.
+
+    ## Current Mode
+    BOSS_REWARD
+
+    ## Player Status
+    - Character: {{ chosen_class_name }}
+    - Current HP: {{ current_hp }}/{{ max_hp }}
+    - Gold: {{ gold }}
+    - Floor: {{ floor }}
+    - Relics: [{% if relic_description %}{{ relic_description }}{% else %}None{% endif %}]
+
+    ## Boss Relics Offered
+    {{ boss_relics_description }}
+
+    ## Instructions
+    Choose one of the Boss Relics. Format your answer as a JSON object like:
+
+    {
+    "action": "choose_relic",
+    "relic": "Calling Bell",
+    "strategy_note": "Calling Bell grants three random relics, which offers high potential value especially early in Act 2."
+    }
+
+    IMPORTANT: Respond with ONLY the JSON object. No explanations or additional text.
+
+  rest-decision: |
+    You are an AI agent playing the roguelike card game Slay the Spire. You are at a Rest Site and must choose one available option.
+
+    ## Current Mode
+    REST_SITE
+
+    ## Player Status
+    - Character: {{ chosen_class_name }}
+    - Current HP: {{ current_hp }}/{{ max_hp }}
+    - Gold: {{ gold }}
+    - Floor: {{ floor }}
+    - Relics: [{% if relic_description %}{{ relic_description }}{% else %}None{% endif %}]
+    - Potions: [{{ potion_description }}]
+
+    ## Available Rest Options
+    {{ available_rest_options }}
+
+    ## Instructions
+    Choose an action. You can only perform one Rest Site action.
+
+    {
+    "action": "rest_action",
+    "option": "REST",
+    "strategy_note": "Low on HP before an elite fight, so resting is the safest option."
+    }
+
+    IMPORTANT: Respond with ONLY the JSON object. No explanations or additional text.
+
+  map-decision: |
+    You are an AI agent playing the roguelike card game Slay the Spire. Choose your next map node strategically.
+
+    ## Current Mode
+    MAP_NAVIGATION
+
+    ## Player Status
+    - Character: {{ chosen_class_name }}
+    - Current HP: {{ current_hp }}/{{ max_hp }}
+    - Gold: {{ gold }}
+    - Floor: {{ floor }}
+    - Relics: [{% if relic_description %}{{ relic_description }}{% else %}None{% endif %}]
+    - Potions: [{{ potion_description }}]
+
+    ## Legend
+    - Node Types: 
+    - '?' = Unknown
+    - '$' = Shop
+    - 'M' = Monster
+    - 'E' = Elite
+    - 'R' = Rest
+    - 'T' = Treasure
+    - 'B' = Boss
+
+    ## Map Layout
+    {{ map_json }}
+
+    ## Available Choices
+    - Next Nodes:
+    {%- for node_info in next_nodes %}
+      {{ node_info }}
+    {%- endfor %}
+
+    ## Instructions
+    Choose the next map node.
+
+    {
+    "action": "choose_node",
+    "node_index": 1,
+    "strategy_note": "Choosing an elite path to maximize relics, as HP is stable and deck is strong."
+    }
+
+    IMPORTANT: Respond with ONLY the JSON object. No explanations or additional text.
+
+  potion-reward-decision: |
+    You are an AI agent playing the roguelike card game Slay the Spire. You've completed a combat and are offered a potion reward.
+
+    ## Current Mode
+    POTION_REWARD
+
+    ## Player Status
+    - Character: {{ chosen_class_name }}
+    - Current HP: {{ current_hp }}/{{ max_hp }}
+    - Gold: {{ gold }}
+    - Floor: {{ floor }}
+    - Relics: [{% if relic_description %}{{ relic_description }}{% else %}None{% endif %}]
+    - Potions: [{{ potion_description }}]
+
+    ## Available Potion Reward
+    {{ reward_potion }}
+
+    ## Instructions
+    Choose a potion to take (and which to discard), or skip:
+
+    {
+    "action": "take_reward",
+    "reward_potion": "Swift Potion",
+    "discard_potion": "Weak Potion",
+    "strategy_note": "Swift Potion provides more immediate card draw value for my aggressive deck."
+    }
+
+    Or to skip:
+
+    {
+    "action": "skip_reward",
+    "strategy_note": "All potions are lower impact than my current set; preserving better tools for upcoming fights."
+    }
+
+    IMPORTANT: Respond with ONLY the JSON object. No explanations or additional text.
+
+  hand-select-decision: |
+    You are an AI agent playing the roguelike card game Slay the Spire. You are required to select specific cards from a temporary pile or your hand for a game effect.
+
+    ## Current Mode
+    HAND_SELECT
+
+    ## Player Status
+    - Character: {{ chosen_class_name }}
+    - Current HP: {{ current_hp }}/{{ max_hp }}
+    - Gold: {{ gold }}
+    - Floor: {{ floor }}
+    - Relics: [{% if relic_description %}{{ relic_description }}{% else %}None{% endif %}]
+    - Potions: [{{ potion_description }}]
+
+    ## Action
+    {{ current_action_human }} : {{ current_action_description }}
+
+    ## Cards to Select From (By Index)
+    {{ card_description }}
+
+    ## Selection Requirements
+    - {% if number_of_cards_to_select == 99 %}
+    - Select as many as you like.
+    {% else %}
+    - Select exactly {{ number_of_cards_to_select }} card(s).
+    {% endif %}
+    - Use the card index(es) from the list.
+
+    ## Instructions
+    Respond like this:
+
+    {
+    "action": "select_cards",
+    "selected_indices": [0, 2],
+    "strategy_note": "Discarding low-value cards to maintain card quality in hand for next turn."
+    }
+
+    IMPORTANT: Respond with ONLY the JSON object. No explanations or additional text.
+
+  event-decision: |
+    You are an AI agent playing the roguelike card game Slay the Spire. You have encountered a random event and must choose an outcome.
+
+    ## Current Mode
+    EVENT
+
+    ## Player Status
+    - Character: {{ chosen_class_name }}
+    - Current HP: {{ current_hp }}/{{ max_hp }}
+    - Gold: {{ gold }}
+    - Floor: {{ floor }}
+    - Relics: [{% if relic_description %}{{ relic_description }}{% else %}None{% endif %}]
+    - Potions: [{{ potion_description }}]
+    - Current Deck: [{{ deck_cards_description }}]
+
+    ## Current Event
+    - Name: {{ event_name }}
+    - Description: "{{ body_text }}"
+
+    ## Available Choices (index: [Label, Description, Disabled])
+    {{ available_event_options }}
+
+    ## Instructions
+    Choose the index of a valid (not disabled) option.
+
+    {
+    "action": "choose_event_option",
+    "option_index": 1,
+    "strategy_note": "This option gives the best trade-off for my current HP and resources."
+    }
+
+    IMPORTANT: Respond with ONLY the JSON object. No explanations or additional text.
+
+  card-reward-decision: |
+    You are an AI agent playing the roguelike card game Slay the Spire. You have been offered a card reward and must choose a card or skip.
+
+    ## Current Mode
+    CARD_REWARD
+
+    ## Player Status
+    - Character: {{ chosen_class_name }}
+    - Current HP: {{ current_hp }}/{{ max_hp }}
+    - Gold: {{ gold }}
+    - Floor: {{ floor }}
+    - Relics: [{% if relic_description %}{{ relic_description }}{% else %}None{% endif %}]
+    - Potions: [{{ potion_description }}]
+    - Current Deck: [{{ deck_cards_description }}]
+
+    ## Available Card Rewards
+    {{ card_description }}
+
+    ## Instructions
+
+    To take a card:
+    {
+    "action": "select_card",
+    "card_name": "Exact Card Name",
+    "strategy_note": "Adds synergy with poison-based cards already in deck."
+    }
+
+    To skip:
+    {
+    "action": "skip_card_reward",
+    "strategy_note": "All options dilute the current deck; skipping for deck consistency."
+    }
+
+    IMPORTANT: Respond with ONLY the JSON object. No explanations or additional text.
+
+  shop-screen-decision: |
+    You are an AI agent playing the roguelike card game Slay the Spire. You are visiting a shop and must choose a purchase, purge, or exit.
+
+    ## Current Mode
+    SHOP_SCREEN
+
+    ## Player Status
+    - Character: {{ chosen_class_name }}
+    - Current HP: {{ current_hp }}/{{ max_hp }}
+    - Gold: {{ current_gold }}
+    - Floor: {{ floor }}
+    - Relics: [{% if relic_description %}{{ relic_description }}{% else %}None{% endif %}]
+    - Potions: [{{ potion_description }}]
+    - Current Deck: [{{ deck_cards_description }}]
+
+    ## Shop Inventory
+    ### Cards for Sale
+    {{ shop_cards_description }}
+    ### Relics for Sale
+    {{ shop_relics_description }}
+    ### Potions for Sale
+    {{ shop_potions_description }}
+
+    ## Purge
+    - Available: {{ purge_available }}
+    - Cost: {{ purge_cost }}
+
+    ## Instructions
+    Choose one action.
+
+    Buy a card:
+    {
+    "action": "buy_card",
+    "item_index": "2",
+    "strategy_note": "Picking up key scaling card to improve early damage output."
+    }
+
+    Buy a relic:
+    {
+    "action": "buy_relic",
+    "item_index": "1",
+    "strategy_note": "This relic enhances energy management, improving consistency."
+    }
+
+    Purge a card:
+    {
+    "action": "purge_card",
+    "strategy_note": "Removing a card to thin the deck and improve draw quality."
+    }
+
+    Leave the shop:
+    {
+    "action": "cancel_shop",
+    "strategy_note": "No valuable purchases available; preserving gold for next shop."
+    }
+
+    IMPORTANT: Respond with ONLY the JSON object. No explanations or additional text.
+
+  grid-screen-decision: |
+    You are an AI agent playing the roguelike card game Slay the Spire. You are interacting with a grid selection screen.
+
+    ## Current Mode
+    GRID_SCREEN
+
+    ## Player Status
+    - Character: {{ chosen_class_name }}
+    - Current HP: {{ current_hp }}/{{ max_hp }}
+    - Gold: {{ gold }}
+    - Floor: {{ floor }}
+    - Relics: [{{ relic_description }}]
+    - Potions: [{{ potion_description }}]
+
+    ## Grid Action
+    - Type: {{ action_name }}
+    - Description: {{ action_description }}
+    - Cards to Select: {{ num_cards_to_select }}
+    - Available Cards:
+    {{ deck_cards_description }}
+
+    ## Instructions
+    To select cards:
+
+    {
+    "action": "select_cards",
+    "card_indices": ["1", "5"],
+    "strategy_note": "Upgrading core engine cards to scale better into later acts."
+    }
+
+    To cancel (if allowed):
+
+    {
+    "action": "cancel_grid",
+    "strategy_note": "No worthwhile upgrades or changes; preserving deck state."
+    }
+
+    IMPORTANT: Respond with ONLY the JSON object. No explanations or additional text.

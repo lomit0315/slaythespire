@@ -1,0 +1,170 @@
+[
+  {
+    "name": "Ambrosia",
+    "description": "Enter Divinity Stance."
+  },
+  {
+    "name": "Ancient Potion",
+    "description": "Gain 1 ( 2)  Artifact."
+  },
+  {
+    "name": "Attack Potion",
+    "description": "Add ( 2 copies of) 1 of 3 random Attack cards to your hand, it costs ( They cost) 0 Energy this turn."
+  },
+  {
+    "name": "Blessing of the Forge",
+    "description": "Upgrade all cards in your hand for the rest of combat."
+  },
+  {
+    "name": "Block Potion",
+    "description": "Gain 12 ( 24)  Block."
+  },
+  {
+    "name": "Blood Potion",
+    "description": "Heal for 20% ( 40%) of your Max HP."
+  },
+  {
+    "name": "Bottled Miracle",
+    "description": "Add 2 ( 4) Miracles to your hand."
+  },
+  {
+    "name": "Colorless Potion",
+    "description": "Choose 1 of 3 random Colorless cards to add ( 2 copies of it) to your hand, it costs ( They cost) 0 Energy this turn."
+  },
+  {
+    "name": "Cultist Potion",
+    "description": "Gain 1 ( 2)  Ritual."
+  },
+  {
+    "name": "Cunning Potion",
+    "description": "Add 3 ( 6) Upgraded Shivs to your hand."
+  },
+  {
+    "name": "Dexterity Potion",
+    "description": "Gain 2 ( 4)  Dexterity."
+  },
+  {
+    "name": "Distilled Chaos",
+    "description": "Play the top 3 ( 6) cards of your draw pile."
+  },
+  {
+    "name": "Duplication Potion",
+    "description": "This turn, your next card is ( next 2 cards are) played twice."
+  },
+  {
+    "name": "Elixir",
+    "description": "Exhaust any number of cards in your hand."
+  },
+  {
+    "name": "Energy Potion",
+    "description": "Gain 2 ( 4) Energy."
+  },
+  {
+    "name": "Entropic Brew",
+    "description": "Fill all your empty potion slots with random potions."
+  },
+  {
+    "name": "Essence of Darkness",
+    "description": "Channel 1 ( 2)  Dark Orbs for each orb slot."
+  },
+  {
+    "name": "Essence of Steel",
+    "description": "Gain 4 ( 8)  Plated Armor."
+  },
+  {
+    "name": "Explosive Potion",
+    "description": "Deal 10 ( 20) Damage to all enemies."
+  },
+  {
+    "name": "Fairy in a Bottle",
+    "description": "When you would die, heal to 30% ( 60%) of your Max HP instead and discard this potion."
+  },
+  {
+    "name": "Fear Potion",
+    "description": "Apply 3 ( 6)  Vulnerable."
+  },
+  {
+    "name": "Fire Potion",
+    "description": "Deal 20 ( 40) Damage to target enemy."
+  },
+  {
+    "name": "Flex Potion",
+    "description": "Gain 5 ( 10)  Strength. At the end of your turn, lose 5 ( 10)  Strength."
+  },
+  {
+    "name": "Focus Potion",
+    "description": "Gain 2 ( 4)  Focus."
+  },
+  {
+    "name": "Fruit Juice",
+    "description": "Gain 5 ( 10) Max HP."
+  },
+  {
+    "name": "Gambler's Brew",
+    "description": "Discard any number of cards, then draw that many."
+  },
+  {
+    "name": "Ghost In A Jar",
+    "description": "Gain 1 ( 2)  Intangible."
+  },
+  {
+    "name": "Heart of Iron",
+    "description": "Gain 6 ( 12)  Metallicize."
+  },
+  {
+    "name": "Liquid Bronze",
+    "description": "Gain 3 ( 6)  Thorns."
+  },
+  {
+    "name": "Liquid Memories",
+    "description": "Choose a card ( 2 cards) in your discard pile and return it ( them) to your hand. It costs ( They cost) 0 Energy this turn."
+  },
+  {
+    "name": "Poison Potion",
+    "description": "Apply 6 ( 12)  Poison to target enemy."
+  },
+  {
+    "name": "Potion of Capacity",
+    "description": "Gain 2 ( 4) Orb slots."
+  },
+  {
+    "name": "Power Potion",
+    "description": "Add ( 2 copies of) 1 of 3 random Power cards to your hand, it costs ( They cost) 0 Energy this turn."
+  },
+  {
+    "name": "Regen Potion",
+    "description": "Gain 5 ( 10)  Regeneration."
+  },
+  {
+    "name": "Skill Potion",
+    "description": "Add ( 2 copies of) 1 of 3 random Skill cards to your hand, it costs ( They cost) 0 Energy this turn."
+  },
+  {
+    "name": "Smoke Bomb",
+    "description": "Escape from a non-boss combat. Receive no rewards."
+  },
+  {
+    "name": "Snecko Oil",
+    "description": "Draw 5 ( 10) cards. Randomize the costs of all cards in your hand for the rest of the combat."
+  },
+  {
+    "name": "Speed Potion",
+    "description": "Gain 5 ( 10)  Dexterity. At the end of your turn, lose 5 ( 10)  Dexterity."
+  },
+  {
+    "name": "Stance Potion",
+    "description": "Enter Calm or Wrath."
+  },
+  {
+    "name": "Strength Potion",
+    "description": "Gain 2 ( 4)  Strength."
+  },
+  {
+    "name": "Swift Potion",
+    "description": "Draw 3 ( 6) cards."
+  },
+  {
+    "name": "Weak Potion",
+    "description": "Apply 3 ( 6)  Weak."
+  }
+]
