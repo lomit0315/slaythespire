@@ -1,7 +1,7 @@
 general:
   character: Ironclad
   model: ChatGPT_Nano  
-  agent: Random 
+  agent: AI 
   repetitions: 3
   research: True
   log-type: Combat

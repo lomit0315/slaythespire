@@ -27,6 +27,7 @@ import re
 from google import genai
 from openai import OpenAI
 from dotenv import load_dotenv
+import codecs
 import time
 import yaml
 from jinja2 import Template
@@ -144,7 +145,7 @@ class GameBenchAgent:
     def fetch_card_data(self):
         path = os.path.join(os.path.dirname(__file__), "cards.json")
 
-        with open(path, "r", encoding="utf-8") as f:
+        with open(path, "r", encoding="utf-8-sig") as f:
             card_data = json.load(f)
 
         self.card_desc_lookup = {card["name"]: card["description"] for card in card_data}
@@ -153,7 +154,7 @@ class GameBenchAgent:
     def fetch_potion_data(self):
         path = os.path.join(os.path.dirname(__file__), "potions.json")
 
-        with open(path, "r", encoding="utf-8") as f:
+        with open(path, "r", encoding="utf-8-sig") as f:
             potion_data = json.load(f)
 
         self.potion_desc_lookup = {potion["name"]: potion["description"] for potion in potion_data}
@@ -162,7 +163,7 @@ class GameBenchAgent:
     def fetch_relic_data(self):
         path = os.path.join(os.path.dirname(__file__), "relics.json")
 
-        with open(path, "r", encoding="utf-8") as f:
+        with open(path, "r", encoding="utf-8-sig") as f:
             relic_data = json.load(f)
 
         self.relic_desc_lookup = {relic["name"]: relic["description"] for relic in relic_data}
@@ -171,7 +172,7 @@ class GameBenchAgent:
     def fetch_power_data(self):
         path = os.path.join(os.path.dirname(__file__), "powers.json")
 
-        with open(path, "r", encoding="utf-8") as f:
+        with open(path, "r", encoding="utf-8-sig") as f:
             power_data = json.load(f)
 
         self.power_desc_lookup = {power["name"]: power["description"] for power in power_data}
@@ -544,8 +545,11 @@ class GameBenchAgent:
 
         map_json = []
 
+        # Determine last y we are at; if no next nodes, include all rows
+        last_y = self.game.screen.next_nodes[0].y if self.game.screen.next_nodes else -1
+
         for y in sorted(map_data.keys()):
-            if y > self.game.screen.next_nodes[0].y:
+            if y > last_y:
                 row = {"y": y, "nodes": []}
                 for x, node in map_data[y].items():
                     node_entry = {
@@ -555,7 +559,7 @@ class GameBenchAgent:
                         "children": [(child.x, child.y) for child in node.children]
                     }
                     row["nodes"].append(node_entry)
-            map_json.append(row)
+                map_json.append(row)
 
         return map_json
 
@@ -1003,7 +1007,7 @@ class GameBenchAgent:
         # Load config
         config_path = get_project_path("config.yaml")
 
-        with open(config_path, "r") as f:
+        with open(config_path, "r", encoding="utf-8-sig") as f:
             config = yaml.safe_load(f)
 
         model = config["general"]["model"].lower()
@@ -1040,7 +1044,23 @@ class GameBenchAgent:
             
             case "gemini_flash":              
                 try:
-                    load_dotenv()
+                    # load .env safely even if encoded with BOM/UTF-16
+                    env_path = os.path.join(get_project_path(), ".env")
+                    try:
+                        with open(env_path, "r", encoding="utf-8-sig") as _f:
+                            pass
+                        load_dotenv(env_path)
+                    except Exception:
+                        try:
+                            with codecs.open(env_path, "r", encoding="utf-16") as _f:
+                                content = _f.read()
+                            # write a decoded temp file to load
+                            tmp_env = env_path + ".utf8"
+                            with open(tmp_env, "w", encoding="utf-8") as _t:
+                                _t.write(content)
+                            load_dotenv(tmp_env)
+                        except Exception:
+                            load_dotenv()
                     api_key = os.getenv("GEMINI_API_KEY")
                     if not api_key:
                         raise RuntimeError("GEMINI_API_KEY is not set")
@@ -1057,7 +1077,21 @@ class GameBenchAgent:
 
             case "gemini_flash_lite":              
                 try:
-                    load_dotenv()
+                    env_path = os.path.join(get_project_path(), ".env")
+                    try:
+                        with open(env_path, "r", encoding="utf-8-sig") as _f:
+                            pass
+                        load_dotenv(env_path)
+                    except Exception:
+                        try:
+                            with codecs.open(env_path, "r", encoding="utf-16") as _f:
+                                content = _f.read()
+                            tmp_env = env_path + ".utf8"
+                            with open(tmp_env, "w", encoding="utf-8") as _t:
+                                _t.write(content)
+                            load_dotenv(tmp_env)
+                        except Exception:
+                            load_dotenv()
                     api_key = os.getenv("GEMINI_API_KEY")
                     if not api_key:
                         raise RuntimeError("GEMINI_API_KEY is not set")
@@ -1074,7 +1108,21 @@ class GameBenchAgent:
                 
             case "gemma":              
                 try:
-                    load_dotenv()
+                    env_path = os.path.join(get_project_path(), ".env")
+                    try:
+                        with open(env_path, "r", encoding="utf-8-sig") as _f:
+                            pass
+                        load_dotenv(env_path)
+                    except Exception:
+                        try:
+                            with codecs.open(env_path, "r", encoding="utf-16") as _f:
+                                content = _f.read()
+                            tmp_env = env_path + ".utf8"
+                            with open(tmp_env, "w", encoding="utf-8") as _t:
+                                _t.write(content)
+                            load_dotenv(tmp_env)
+                        except Exception:
+                            load_dotenv()
                     api_key = os.getenv("GEMINI_API_KEY")
                     if not api_key:
                         raise RuntimeError("GEMINI_API_KEY is not set")
@@ -1091,7 +1139,21 @@ class GameBenchAgent:
                 
             case "chatgpt_nano":
                 try:
-                    load_dotenv()
+                    env_path = os.path.join(get_project_path(), ".env")
+                    try:
+                        with open(env_path, "r", encoding="utf-8-sig") as _f:
+                            pass
+                        load_dotenv(env_path)
+                    except Exception:
+                        try:
+                            with codecs.open(env_path, "r", encoding="utf-16") as _f:
+                                content = _f.read()
+                            tmp_env = env_path + ".utf8"
+                            with open(tmp_env, "w", encoding="utf-8") as _t:
+                                _t.write(content)
+                            load_dotenv(tmp_env)
+                        except Exception:
+                            load_dotenv()
                     api_key = os.getenv("OPENAI_API_KEY")
                     if not api_key:
                         raise RuntimeError("OPENAI_API_KEY is not set")
@@ -1111,7 +1173,21 @@ class GameBenchAgent:
             case "chatgpt_mini":
                 try:
                     # TODO potentially move to other chatgpts
-                    load_dotenv()
+                    env_path = os.path.join(get_project_path(), ".env")
+                    try:
+                        with open(env_path, "r", encoding="utf-8-sig") as _f:
+                            pass
+                        load_dotenv(env_path)
+                    except Exception:
+                        try:
+                            with codecs.open(env_path, "r", encoding="utf-16") as _f:
+                                content = _f.read()
+                            tmp_env = env_path + ".utf8"
+                            with open(tmp_env, "w", encoding="utf-8") as _t:
+                                _t.write(content)
+                            load_dotenv(tmp_env)
+                        except Exception:
+                            load_dotenv()
                     api_key = os.getenv("OPENAI_API_KEY")
                     if not api_key:
                         raise RuntimeError("OPENAI_API_KEY is not set")
@@ -1135,7 +1211,21 @@ class GameBenchAgent:
             
             case "chatgpt":
                 try:
-                    load_dotenv()
+                    env_path = os.path.join(get_project_path(), ".env")
+                    try:
+                        with open(env_path, "r", encoding="utf-8-sig") as _f:
+                            pass
+                        load_dotenv(env_path)
+                    except Exception:
+                        try:
+                            with codecs.open(env_path, "r", encoding="utf-16") as _f:
+                                content = _f.read()
+                            tmp_env = env_path + ".utf8"
+                            with open(tmp_env, "w", encoding="utf-8") as _t:
+                                _t.write(content)
+                            load_dotenv(tmp_env)
+                        except Exception:
+                            load_dotenv()
                     api_key = os.getenv("OPENAI_API_KEY")
                     if not api_key:
                         raise RuntimeError("OPENAI_API_KEY is not set")
