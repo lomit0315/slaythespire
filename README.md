@@ -1,3 +1,31 @@
+## Development Update Report
+
+### 1. Configuration and Environment File Handling Improvements
+
+- **Enhanced Encoding Compatibility**:
+    - Implemented a robust loader for `.env` files that can auto-detect **BOM/UTF-16**.
+    - Updated **YAML/JSON** file reads to consistently use `utf-8-sig`, preventing parse errors caused by BOM or unusual encodings.
+- **Unified Loading Approach**:
+    - Replaced all `load_dotenv()` calls with the new safe loader.
+    - Adjusted config file opening logic to ensure stability across different platforms and encodings.
+
+### 2. Fix for `map_to_json_structure` Crash
+
+- **Issue**:
+    - The `row` variable could be referenced before initialization, causing an **`UnboundLocalError`**.
+    - The code also crashed when `next_nodes` was empty due to an out-of-range index access.
+- **Changes Made**:
+    - Replaced direct indexing with a safe fallback:
+        
+        ```python
+        last_y = self.game.screen.next_nodes[0].y if self.game.screen.next_nodes else -1
+        ```
+        
+    - Only build a `row` when `y > last_y`, and moved `map_json.append(row)` inside that conditional block.
+- **Effect**:
+    - Eliminated the `UnboundLocalError`.
+    - Properly handles cases where `next_nodes` is empty, making the function more robust.
+
 # game-bench
 A benchmarking framework for testing AI agents in a card-based roguelike environment.
 
